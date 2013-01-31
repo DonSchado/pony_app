@@ -4,6 +4,15 @@ class PoniesController < ApplicationController
   end
 
   def create
-    render :text => params[:pony]
+    @pony = Pony.create(params[:pony])
+    if @pony.save
+      redirect_to pony_path(@pony)
+    else
+      render "new"
+    end
+  end
+
+  def show
+    @pony = Pony.find(params[:id])
   end
 end

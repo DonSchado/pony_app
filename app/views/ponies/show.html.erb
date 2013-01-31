@@ -1,0 +1,9 @@
+<h1>Pony Profile for <%= @pony.name %>:</h1>
+
+<div class="well">
+  <p><strong>Name:</strong> <%= @pony.name %></p>
+  <p><strong>Color:</strong> <%= @pony.color %></p>
+  <p><strong>Kind of:</strong> <%= @pony.kind_of %></p>
+</div>
+
+<%= link_to "Home", home_page_path, :class => "btn" %>
