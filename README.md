@@ -91,17 +91,17 @@ time to save the work:
 
 
 ## make it a little bit more pretty!
-visit twitter.github.com/bootstrap
-and download bootstrap.zip
+visit <twitter.github.com/bootstrap>
+, download bootstrap.zip and unzip the bootstrap folder.
 
-move the bootstrap/img folder to **public/img**
+move the bootstrap/img folder to your apps **public/img**
 
-js files => **vendor/assets/javascripts** (w/o *.min)
+js/bootstrap.js => **vendor/assets/javascripts** (not the *.min file)
 
-css files => **vendor/assets/stylesheets** (w/o *.min)
+css/bootstrap-responsive.css and css/bootstrap.css files => **vendor/assets/stylesheets** (w/o *.min)
 
 
-change application.css to
+change **app/assets/stylsesheets/application.css** to
 
 ```
  /*
@@ -110,7 +110,7 @@ change application.css to
   */
 ```
 
-and application.js to
+and **app/assets/javascripts/application.js** to
 
 ```
  //= require jquery
@@ -118,7 +118,7 @@ and application.js to
  //= require bootstrap
 ```
 
-change **pages/index.html.erb** to
+change **views/pages/index.html.erb** to
 
 ```
  <div class="hero-unit">
