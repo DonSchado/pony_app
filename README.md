@@ -85,7 +85,7 @@ reload and be happy! :)
 
 time to save the work:
 
-* $ git status (which files have changes?)
+* $ git status (which files have changed?)
 * $ git add .
 * $ git commit -am "index view"
 
