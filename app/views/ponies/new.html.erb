@@ -1,0 +1,39 @@
+<h1>New Pony</h1>
+<br>
+<div class="row">
+  <div class="span12">
+    <div class="well">
+      <%= form_for @pony, :url => { :action => "create" }, :html => { :class => "form-horizontal" } do |f| %>
+        <div class="control-group">
+          <div class="control-label">
+            <%= f.label :name %>
+          </div>
+          <div class="controls">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="control-label">
+            <%= f.label :color %>
+          </div>
+          <div class="controls">
+            <%= f.text_field :color %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="control-label">
+            <%= f.label :kind_of %>
+          </div>
+          <div class="controls">
+            <%= f.text_field :kind_of %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.submit "New", :class => "btn" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
