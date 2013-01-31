@@ -40,7 +40,7 @@ visit localhost:3000
 
 delete public/index.html
 
-reload your browser
+reload your browser and read the error message
 
 
 ### (index/home page) routing, controller, view
@@ -49,11 +49,11 @@ in routes.rb
 ```
  root :to => 'pages#index'
 ```
-(reload)
+(reload and read the error message)
 
 create the file **pages_controller.rb** under app/controllers
 
-(reload)
+(reload and read the error message)
 
 in pages_controller.rb
 
@@ -62,7 +62,7 @@ in pages_controller.rb
  end
 ```
 
-(reload)
+(reload and read the error message)
 
 add in pages_controller.rb
 
@@ -71,7 +71,7 @@ add in pages_controller.rb
  end
 ```
 
-(reload)
+(reload and read the error message)
 
 make a folder named **pages** under app/views/
 and create a file **index.html.erb**
@@ -117,7 +117,7 @@ and application.js to
  //= require bootstrap
 ```
 
-change index.html.erb to
+change **pages/index.html.erb** to
 
 ```
  <div class="hero-unit">
@@ -132,7 +132,7 @@ change index.html.erb to
  </div>
 ```
 
-in application.html.erb add this between the body tags
+in **layouts/application.html.erb** add this between the body tags
 
 ```
  <div class="container">
@@ -140,7 +140,7 @@ in application.html.erb add this between the body tags
  </div>
 ```
 
-reload!
+(reload)
 
 change routes.rb
 
@@ -148,7 +148,9 @@ change routes.rb
  root :to => 'pages#index', as: :home_page
 ```
 
-save your work!
+(reload) 
+
+and save your work!
 
 * $ git status
 * $ git add .
