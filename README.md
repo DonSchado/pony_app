@@ -25,10 +25,12 @@
 Add to Gemfile:
 
 ```
- gem "thin"
- gem "better_errors"
- gem "binding_of_caller"
- gem "quiet_assets"
+ group :development do
+   gem "thin"
+   gem "better_errors"
+   gem "binding_of_caller"
+   gem "quiet_assets"
+ end
 ```
 
 * $ bundle
