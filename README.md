@@ -91,10 +91,9 @@ time to save the work:
 
 
 ## make it a little bit more pretty!
-visit [http://twitter.github.com/bootstrap/](http://twitter.github.com/bootstrap/)
-, download bootstrap.zip and unzip the bootstrap folder.
+visit [http://twitter.github.com/bootstrap/](http://twitter.github.com/bootstrap/), download bootstrap.zip and unzip the bootstrap folder.
 
-move the bootstrap/**img** folder to your apps **public/img**
+move the bootstrap/img folder to your apps **public/img**
 
 js/bootstrap.js file => **vendor/assets/javascripts** (not the *.min file)
 
