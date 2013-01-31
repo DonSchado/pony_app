@@ -401,7 +401,7 @@ we know this kind of error now:
  end
 ```
 
-and add file the **ponies/index.html.erb**:
+and add the file **ponies/index.html.erb**:
 
 ```
  <h1>All my fellow ponies:</h1>
@@ -447,7 +447,19 @@ add another link to **ponies/index.html.erb**:
  <% end -%>
 ```
 
-in the ponies controller:
+(reload)
+
+
+we need to add the custom path in the routes:
+
+```
+ get "kill_all_ponies" => "ponies#delete_all", :as => "kill_all_ponies"
+```
+
+(reload)
+
+
+add in the ponies_controller:
 
 ```
  def delete_all
@@ -472,7 +484,6 @@ change in app/views/layout/application.html.erb:
   <%= yield %>
  </div>
 ```
-
 
 Nicer looking form for new ponies **views/ponies/new.html.erb**:
 
