@@ -9,6 +9,13 @@
 <body>
 
 <div class="container">
+  <%- flash.each do |type, msg| %>
+    <div class="alert alert-info fade in">
+      <a class="close", href= "#", data-dismiss='alert'>&times;</a>
+      <%= msg %>
+    </div>
+  <% end %>
+
   <%= yield %>
 </div>
 

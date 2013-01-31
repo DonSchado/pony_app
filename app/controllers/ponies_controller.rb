@@ -15,4 +15,13 @@ class PoniesController < ApplicationController
   def show
     @pony = Pony.find(params[:id])
   end
+
+  def index
+    @ponies = Pony.all
+  end
+
+  def delete_all
+    Pony.delete_all
+    redirect_to :home_page, notice: "Killed all the ponies..."
+  end
 end

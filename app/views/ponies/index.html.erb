@@ -1,0 +1,18 @@
+<h1>All my fellow ponies:</h1>
+
+<table class="table table-bordered table-striped table-hover">
+  <%- @ponies.each do |pony| %>
+    <tr>
+      <td><%= link_to pony.name, pony_path(pony) %></td>
+      <td><%= pony.color %></td>
+      <td><%= pony.kind_of %></td>
+    </tr>
+  <% end -%>
+</table>
+
+<%= link_to "Home", :home_page, :class => "btn" %>
+
+<%= link_to :kill_all_ponies, :class => "btn btn-danger pull-right btn-mini" do %>
+  <i class="icon-remove icon-white"></i>
+  Kill all the ponies
+<% end -%>
