@@ -78,7 +78,7 @@ time to save the work:
 * $ git commit -am "index view"
 
 
-## make it a little bit mpre pretty!
+## make it a little bit more pretty!
 visit twitter.github.com/bootstrap
 and download bootstrap.zip
 
@@ -121,7 +121,7 @@ change index.html.erb to
  </div>
 ```
 
-in application.html.erb add this between the <body> tags
+in application.html.erb add this between the body tags
 
 ```
  <div class="container">
