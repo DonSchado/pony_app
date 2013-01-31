@@ -5,6 +5,7 @@
 
 => avoiding scaffolds to understand the interplay of the components
 
+we will build something like this:
 
 ![screenshot](https://raw.github.com/DonSchado/pony_app/master/public/screen1.png)
 
@@ -14,7 +15,7 @@
 
 
 
-### setup
+## setup
 * $ rails -v
 * $ rails new pony_app
 * $ cd pony_app
@@ -43,7 +44,7 @@ delete public/index.html
 reload your browser and read the error message
 
 
-### (index/home page) routing, controller, view
+## (index/home page) routing, controller, view
 in routes.rb
 
 ```
