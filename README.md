@@ -191,7 +191,7 @@ add then
 
 (reload)
 
-add folder app/views/**ponies**
+add folder **app/views/ponies**
 add there the file **new.html.erb** (we can pretty this up later)
 
 ```
@@ -257,7 +257,9 @@ create the create action in the ponies_controller.rb:
 
 (reload)
 
-**YAY! we can submit ponies! **
+
+### YAY! we can submit ponies!
+
 
 * $ git status
 * $ git add .
