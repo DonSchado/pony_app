@@ -5,6 +5,15 @@
 
 => avoiding scaffolds to understand the interplay of the components
 
+
+![screenshot](https://raw.github.com/DonSchado/pony_app/master/public/screen1.png)
+
+![screenshot](https://raw.github.com/DonSchado/pony_app/master/public/screen2.png)
+
+![screenshot](https://raw.github.com/DonSchado/pony_app/master/public/screen3.png)
+
+
+
 ### setup
 * $ rails -v
 * $ rails new pony_app
