@@ -197,7 +197,7 @@ add there the file **new.html.erb** (we can pretty this up later)
 ```
  <h1>New Pony</h1>
  <%= form_for @pony, :url => { :action => "create" } do |f| %>
-   <%= f.input :name %>
+   <%= f.text_field :name %>
    <%= f.text_field :color %>
    <%= f.text_field :kind_of %>
    <%= f.submit %>
